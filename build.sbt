@@ -36,6 +36,8 @@ javaOptions ++= Seq("-Xms512M", "-Xmx2048M", "-XX:MaxPermSize=2048M", "-XX:+CMSC
 
 // additional libraries
 libraryDependencies ++= Seq(
+  "org.apache.spark" %% "spark-sql" % "2.2.0",
+  "org.apache.spark" %% "spark-hive" % "2.2.0",
   "org.scalatest" %% "scalatest" % "3.0.1",
   "org.scalacheck" %% "scalacheck" % "1.13.4",
   "junit" % "junit" % "4.12",
